@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainbox{
+    background-image: url("image copy.png");
+    background-size: cover;
+    height:100vh;
+}
+.buttone i{
+    color:white;
+    font-size:20px;
+    font-weight:700px;
+    line-height:60px;
+    position:absolute;
+    left:20px;
+    transition: all 0.3s linear;
+}
+
+.selectbox{
+    position: fixed;
+    left:-300px;
+    height:100vh;
+    width:300px;
+    background-color:rgb(255,255,255,0.1);
+    box-shadow: 0 0 6px rgb(255,255,255,0.5);
+    transition: all 0.3s linear;
+}
+
+.selectbox .logo{
+    position:absolute;
+    line-height:60px;
+    width:100%;
+    box-shadow: 0 0 4px rgb(255,255,255,0.5);
+    height:60px;
+    
+}
+
+.selectbox .logo a{
+    color: white;
+    position: absolute;
+    left:50px;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.selectbox .buttontwo i {
+    font-size: 25px;
+    line-height:60px;
+    position:absolute;
+    left:275px;
+    color: grey;
+    opacity:1;
+    
+}
+
+.selectbox .menu{
+    color:white;
+    width:100%;
+    position:absolute;
+    top:80px;
+}
+
+.selectbox .menu li{
+    margin-top:6px;
+    padding:25px 20px;
+
+}
+
+.selectbox .menu i,a{
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+    padding-left:8px;
+}
+
+.selectbox .socialmedia{
+    position:absolute;
+    left:25%;
+    bottom:35px;
+}
+
+.selectbox .socialmedia i{
+    color: white;
+    opacity:0.5;
+    padding:0 5px;
+
+
+}
+
+#check{
+    display:none;
+}
+
+.selectbox .menu li:hover{
+    box-shadow: 0 0 4px rgb(255,255,255,0.5)
+
+}
+
+.buttone i:hover{
+    font-size:25px;;
+}
+
+.selectbox .socialmedia i:hover{
+    opacity:1;
+    transform:scale(1.2);
+}
+
+#check:checked ~ .selectbox{
+    left:0px;
+}
+
+#check:checked ~ .buttone i{
+    opacity:0;
+}
+
+#check:checked ~ .selectbox .buttontwo i{
+    opacity:1;
+    
+
+}
+
